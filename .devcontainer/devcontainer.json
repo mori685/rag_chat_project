@@ -1,0 +1,19 @@
+{
+    "name": "RAG Chat Django Application",
+    "dockerFile": "../Dockerfile",
+    "context": "..",
+    "forwardPorts": [8000],
+    "postCreateCommand": "python manage.py migrate",
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "batisteo.vscode-django"
+    ],
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.provider": "black",
+        "editor.formatOnSave": true
+    }
+}

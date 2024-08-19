@@ -1,0 +1,8 @@
+django
+transformers
+torch
+sentence-transformers
+faiss-cpu
+openai
+python-dotenv
+psycopg2
