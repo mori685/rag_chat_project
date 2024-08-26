@@ -18,7 +18,7 @@ if not SECRET_KEY:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '','176.34.52.153').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '','176.34.52.153','ec2-176-34-52-153.ap-northeast-1.compute.amazonaws.com').split(',')
 
 # Application definition
 INSTALLED_APPS = [
