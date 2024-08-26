@@ -11,6 +11,7 @@ ENV PYTHONUNBUFFERED 1
 # システムの依存関係をインストール
 RUN apt-get update && apt-get install -y \
     postgresql-client \
+    netcat-openbsd \
     && rm -rf /var/lib/apt/lists/*
 
 # Pythonの依存関係をインストール
